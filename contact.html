@@ -1,78 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Aaron Delgado through email, LinkedIn, or GitHub.">
-  <title>Contact | Aaron Delgado</title>
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <style>
-    /* Borders only for this assignment. */
-    header, main, footer { border: 1px solid; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Aaron Delgado through email, LinkedIn, or GitHub.">
+    <title>Contact | Aaron Delgado</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <style>
+        header, main, footer { border: 1px solid; }
+    </style>
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
-  <header>
-    <p><a href="index.html">Aaron Delgado</a></p>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="main-content">
-    <h1>Contact</h1>
-    <section>
-      <h2>Get in touch</h2>
-      <p>If you want to ask about a project or get in touch, email is the easiest way
-        to reach me. You can also find my GitHub and LinkedIn below.</p>
-      <address>
-        <ul>
-          <li><span>Email:</span> <a href="mailto:aad010@ucsd.edu">aad010@ucsd.edu</a></li>
-          <li><a href="https://www.linkedin.com/in/aaron-delgado-aad/">Aaron Delgado on LinkedIn</a></li>
-          <li><a href="https://github.com/aarond67">Aaron Delgado on GitHub</a></li>
-        </ul>
-      </address>
-    </section>
+  
+    <header>
+        <p>
+            <a href="index.html">Aaron Delgado</a>
+        </p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id = "main-content">
+        <h1 id = "contact-title">
+            Contact
+        </h1>
+        <section id = "contact-information">
+            <h2>Get in touch</h2>
+            <p>
+                If you have a question about one of my projects or want to get in touch, you can email me. I also
+                included my GitHub and LinkedIn if you want to see more of my work.
+            </p>
+            <address>
+                <ul>
+                    <li><span>Email:</span> <a href="mailto:aad010@ucsd.edu">aad010@ucsd.edu</a></li>
+                    <li><a href="https://www.linkedin.com/in/aaron-delgado-aad/">Aaron Delgado on LinkedIn</a></li>
+                    <li><a href="https://github.com/aarond67">Aaron Delgado on GitHub</a></li>
+                </ul>
+            </address>
+        </section>
 
-    <section>
-      <h2>Message form</h2>
-      <p id="form-note"><strong>This form doesn't send messages yet.</strong>
-        The fields are disabled for now. Please use my email above to reach me.</p>
-      <form action="contact.html" method="get" aria-describedby="form-note">
-        <fieldset disabled>
-          <legend>Your message</legend>
-          <p>
-            <label for="sender-name">Name</label><br>
-            <input id="sender-name" name="sender-name" type="text" autocomplete="name" required>
-          </p>
-          <p>
-            <label for="sender-email">Email</label><br>
-            <input id="sender-email" name="sender-email" type="email" autocomplete="email" required>
-          </p>
-          <p>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="6" cols="25" required></textarea>
-          </p>
-          <button type="button">Send message</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Aaron Delgado · Computer Engineering · UC San Diego</p>
-    <nav aria-label="Additional links">
-      <ul>
-        <li><a href="experiments.html">Experiments</a></li>
-        <li><a href="mailto:aad010@ucsd.edu">Email Aaron</a></li>
-        <li><a href="https://github.com/aarond67">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/aaron-delgado-aad/">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </footer>
+        <section id = "contact-message-form">
+            <h2>Message form</h2>
+            <p id = "form-note">
+                <strong>This form doesn't send messages yet.</strong> I haven't connected it to anything yet, so
+                the fields are disabled. For now, use the email link above.
+            </p>
+            <form action="contact.html" method="get" aria-describedby="form-note">
+                <fieldset disabled>
+                    <legend>Your message</legend>
+                    <p>
+                        <label for="sender-name">Name</label><br> <input id = "sender-name" name="sender-name"
+                        type="text" autocomplete="name" required>
+                    </p>
+                    <p>
+                        <label for="sender-email">Email</label><br> <input id = "sender-email" name="sender-email"
+                        type="email" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Message</label><br> <textarea id = "message" name="message" rows="6"
+                        cols="25" required></textarea>
+                    </p>
+                    <button type="button">Send message</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Aaron Delgado · Computer Engineering · UC San Diego
+        </p>
+        <nav aria-label="Additional links">
+            <ul>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="mailto:aad010@ucsd.edu">Email Aaron</a></li>
+                <li><a href="https://github.com/aarond67">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/aaron-delgado-aad/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
